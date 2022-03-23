@@ -1,0 +1,157 @@
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+    overflow: hidden;
+    box-sizing: border-box;
+    min-height: 100vh;
+	background: rgb(0,234,255);
+	background: linear-gradient(249deg, rgba(0,234,255,0.18393294817927175) 20%, rgba(24,226,168,0.16152398459383754) 52%);
+	font-family: 'Roboto', sans-serif;
+}
+input:focus {
+	outline: none;
+}
+
+/* personal css */
+#todo-header {
+	color: #000;
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+.todo-input {
+	width: 300px;
+	height: 40px;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2);
+	padding: 10px 12px;
+	font-size: 1.25rem;
+}
+.todo-button {
+	border: none;
+	border-radius: 50%;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2); 
+	background-color: #0000ff;
+	color: #fff;
+	padding: 10px 12px;
+	font-size: 1.25rem;
+}
+
+#list {
+	background-color: #fff;
+	border-radius: 20px;
+	width: 100%;
+	max-width: 450px;
+	height: 500px;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2);
+}
+
+#list-header {
+	color: #000;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.todo {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s ease;
+}
+
+.todo li {
+	list-style: none;
+}
+
+.todo-item {
+	font-size: 1.5rem;
+	margin: 20px 15px;
+}
+.todo-completed {
+	margin: 0 5px;
+	padding: 10px 10px;
+	background-color: #00b400;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2);
+}
+.todo-delete {
+	margin: 0 5px;
+	padding: 10px 10px;
+	background-color: #c50101;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2);
+}
+.todo i {
+	font-size: 1rem;
+	color: #fff;
+}
+.fa-trash, .fa-check, .fa-plus {
+	pointer-events: none;
+}
+.completed {
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
+/* select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	border: none;
+}
+
+.select {
+	position: relative;
+	overflow: hidden;
+}
+select {
+	color: #0000ff;
+	width: 10rem;
+} */
